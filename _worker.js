@@ -91,7 +91,7 @@ export default {
                         
                         if (request.method === 'POST') {
                             
-                            if (!isAuth) return new Response('Unauthorized', { status: 401 });             
+                            //if (!isAuth) return new Response('Unauthorized', { status: 401 });             
                             const formData = await request.formData();
                             await updateDataset(env, formData);
 
